@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng vòng lặp lồng nhau</title>
+</head>
+<body>
+<script>
+    let obito
+    obito= '<table border="1" width="359" cellPadding="3">';
+        for ( i=1; i<=10; i++ ){
+            obito= obito + "<tr>";
+            for (j=1; j<=10; j++){
+                obito= obito +'<td>'+ i * j +'</td>';
+            }
+            obito = obito + '</tr>';
+        }
+        obito = obito + '</table>';
+        document.write(obito);
+</script>
+</body>
+</html>

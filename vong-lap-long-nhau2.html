@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập lồng nhau 2</title>
+</head>
+<body>
+<script language="javascript">
+    let obito, i, j;
+    obito = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+    i = j = 1;
+    while (i <= 10) {
+        obito = obito + "<tr>";
+        while (j <= 10) {
+            obito = obito + "<td>" + i * j + "</td>";
+            j++;
+        }
+        obito = obito + "</tr>";
+        j = 1;
+        i++;
+    }
+    sout = obito + "</table>";
+    document.write(obito);
+</script>
+</body>
+</html>
